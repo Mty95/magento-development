@@ -1,7 +1,3 @@
-mo:d Magento_TwoFactorAuth
-s:up
-s:d:c
-
 config:env:set system.default.system.full_page_cache.caching_application 1
 config:env:set system.default.system.security.max_session_size_admin 2560000
 
@@ -20,3 +16,8 @@ config:env:set system.default.admin.security.use_form_key 0
 config:env:set system.default.admin.security.session_lifetime 86400
 
 app:config:import
+c:f
+
+mo:d Magento_TwoFactorAuth
+s:up
+s:d:c

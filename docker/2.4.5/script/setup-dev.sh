@@ -20,10 +20,8 @@ config:env:set system.default.admin.security.password_lifetime 0
 config:env:set system.default.admin.security.use_form_key 0
 config:env:set system.default.admin.security.session_lifetime 86400
 
-app:config:import
-c:f
-
 mo:d Magento_TwoFactorAuth
 mo:d Magento_AdminAnalytics
+
 s:up
 s:d:c

@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 curl -o bin/setup-ssl-mty95 https://raw.githubusercontent.com/Mty95/magento-development/master/docker/bin/setup-ssl-mty95
 chmod +x bin/setup-ssl-mty95
+
+curl -o bin/mysql-create-database https://raw.githubusercontent.com/Mty95/magento-development/master/docker/bin/mysql-create-database
+chmod +x bin/mysql-create-database

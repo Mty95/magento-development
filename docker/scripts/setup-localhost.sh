@@ -1,5 +1,8 @@
 deploy:mode:show
 
+config:env:set system.default.admin.usage.enabled 0
+config:env:set system.default.system.full_page_cache.caching_application 1
+
 config:env:set "system.default.web.secure.base_url" "${url}"
 config:env:set "system.default.web.secure.base_link_url" "{{secure_base_url}}"
 

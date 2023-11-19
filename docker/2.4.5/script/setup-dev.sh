@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 config:set admin/usage/enabled 0
 
 

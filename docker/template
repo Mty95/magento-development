@@ -9,4 +9,12 @@ for filename in mty95/docker/bin/*; do
   chmod +x ${filename#*/*/}
 done
 
+for filename in mty95/docker/scripts/*; do
+  [ -e "$filename" ] || continue
+
+  mkdir -p scripts
+  cp -rf $filename ${filename#*/*/}
+  chmod +x ${filename#*/*/}
+done
+
 rm -r mty95

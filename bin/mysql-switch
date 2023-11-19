@@ -1,0 +1,10 @@
+#!/bin/bash
+[ -z "$1" ] && echo "Please specify a database name (ex. stg)" && exit
+
+# ======
+DATABASE=$@
+sed -i -E "s/MYSQL_DATABASE=(.*)/MYSQL_DATABASE=${DATABASE}/" env/db.env
+
+echo "Database changed in your env/db.env file!"
+bin/restart
+bin/mysql-show

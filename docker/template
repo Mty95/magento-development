@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-git clone git@github.com:Mty95/magento-development.git mty95
+git clone --quiet git@github.com:Mty95/magento-development.git mty95
 
 for filename in mty95/docker/bin/*; do
   [ -e "$filename" ] || continue
-  echo ${filename#*/*/}
 
   mkdir -p bin
   cp -rf $filename ${filename#*/*/}
